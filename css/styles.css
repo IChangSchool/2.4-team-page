@@ -1,0 +1,25 @@
+.img-center
+{
+  align-content:center;
+  float:10px;
+  bottom:0px;
+  width:20%;
+  height:20%;
+}
+
+/*.col-md-5ths,
+
+.col-lg-5ths {
+
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+      position: relative;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px;
+        width: 20%;
+        float: left;
+    }
+}*/

@@ -2,40 +2,36 @@
 <html class="no-js" lang="">
 
     <style>
-    .col-h-3 { height: 150px; }
-    .col-w-3 { width: 150px; }
-    .col-w-1, .col-w-2,
-    .col-w-3, .col-w-4 {
-        float: left;
-        position: relative;
-    }
-
       tranhero
       {
         background-image:url("images/tran-hero.png");
         height:400px;
-        display:block;
+        display: block;
       }
+
       h1::after
       {
-          border: 0.5px solid black;
+          border:1px solid black;
           content:'';
           display: block;
-          width: 70px;
+          width: 80px;
           margin-top: 15px;
           margin-right: auto; /* used to center alongside margin-left */
           margin-left: auto;
       }
+
       p
       {
         font-size: 150%;
       }
+
       .row
       {
         column-gap: 20px;
       }
 
-      .dropdown-content {
+      .dropdown-content
+      {
         display: none;
         position: absolute;
         bottom: 0;
@@ -44,7 +40,7 @@
         width: 196px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.6);
-    }
+      }
 
     div:hover > .dropdown-content  /* Do NOT set the div:hover EQUAL (=) to .dropdown-content. Otherwise, it will be wacky. Instead, use the (>) greater than sign to fix the issue */
     {
@@ -69,36 +65,38 @@
 
     <body>
       <div class = "container">
-        <div class ="jumbotron">
-          <tranhero>
-          </tranhero>
-        </div>
 
-        <h1 class = "text-center"> About Team Tran </h1>
+        <tranhero>
+        </tranhero>
 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h1 class = "text-center"> <br> About Team Tran </h1>
+
+        <p><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br></p>
 
         <div class="row">
-          <div class="col-md-3">
-              <img src="images/member1.png" alt="First Tran">
+          <div class="img-center col-md-3"> <!--img-center is the properties to center the image properly in CSS (credits to Cooper) in styles.css that allows 5 columns in a row -->
+              <img src="images/member1.png" alt="First Tran" >
             <div class="dropdown-content">Kevin 1</div>
           </div>
-          <div class="col-md-3">
-            <img src="images/member2.png" alt="Second Tran">
+          <div class="img-center col-md-3">
+            <img src="images/member2.png" alt="Second Tran" height=196px width=196px>
             <div class="dropdown-content">Kevin 2</div>
           </div>
-          <div class="col-md-3">
-            <img src="images/member3.png" alt="Third Tran">
+          <div class="img-center col-md-3">
+            <img src="images/member3.png" alt="Third Tran" height=196px width=196px>
             <div class="dropdown-content">Kevin 3</div>
           </div>
-          <div class="col-md-3">
-            <img src="images/member4.png" alt="Fourth Tran">
+          <div class="img-center col-md-3">
+            <img src="images/member4.png" alt="Fourth Tran" height=196px width=196px>
             <div class="dropdown-content">Kevin 4</div>
           </div>
-          <div class="col-md-3">
-            <img src="images/member5.png" alt="Fifth Tran">
+          <div class="img-center col-md-3">
+            <img src="images/member5.png" alt="Fifth Tran" height=196px width=196px>
             <div class="dropdown-content">Kevin 5</div>
           </div>
+      </div>
+      <div class ="row">
+        <p class = "text-center"><br> Made by Ian <br> <br> </p>
       </div>
 
       <!--  <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
