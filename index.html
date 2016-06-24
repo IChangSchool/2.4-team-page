@@ -1,21 +1,107 @@
 <!doctype html>
 <html class="no-js" lang="">
+
+    <style>
+    .col-h-3 { height: 150px; }
+    .col-w-3 { width: 150px; }
+    .col-w-1, .col-w-2,
+    .col-w-3, .col-w-4 {
+        float: left;
+        position: relative;
+    }
+
+      tranhero
+      {
+        background-image:url("images/tran-hero.png");
+        height:400px;
+        display:block;
+      }
+      h1::after
+      {
+          border: 0.5px solid black;
+          content:'';
+          display: block;
+          width: 70px;
+          margin-top: 15px;
+          margin-right: auto; /* used to center alongside margin-left */
+          margin-left: auto;
+      }
+      p
+      {
+        font-size: 150%;
+      }
+      .row
+      {
+        column-gap: 20px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        height: 196px; /* If you do 100% for width, it will overlap */
+        width: 196px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    div:hover > .dropdown-content  /* Do NOT set the div:hover EQUAL (=) to .dropdown-content. Otherwise, it will be wacky. Instead, use the (>) greater than sign to fix the issue */
+    {
+        display: block;
+    }
+
+    </style>
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Team Tran</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
-        <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <div class = "container">
+        <div class ="jumbotron">
+          <tranhero>
+          </tranhero>
+        </div>
+
+        <h1 class = "text-center"> About Team Tran </h1>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <div class="row">
+          <div class="col-md-3">
+              <img src="images/member1.png" alt="First Tran">
+            <div class="dropdown-content">Kevin 1</div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/member2.png" alt="Second Tran">
+            <div class="dropdown-content">Kevin 2</div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/member3.png" alt="Third Tran">
+            <div class="dropdown-content">Kevin 3</div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/member4.png" alt="Fourth Tran">
+            <div class="dropdown-content">Kevin 4</div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/member5.png" alt="Fifth Tran">
+            <div class="dropdown-content">Kevin 5</div>
+          </div>
+      </div>
+
+      <!--  <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
     </body>
 </html>
